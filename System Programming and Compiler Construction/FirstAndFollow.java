@@ -21,10 +21,10 @@
 *		
 *		Logically Input will be saved like this:
 *			Index	LHS(char)	RHS(String)
-*			0		S			bB
-*			1		S			#
-*			2		B			a
-*			3		B			#
+*			0		S		bB
+*			1		S		#
+*			2		B		a
+*			3		B		#
 *		
 */
 
