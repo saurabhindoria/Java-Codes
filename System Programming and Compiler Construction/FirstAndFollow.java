@@ -127,7 +127,7 @@ class FirstAndFollow
 						break;
 					
 					//if it was a Non Terminal, then see if # was there in the FIRST(symbol)
-					//if Yes, the traverse further grammar
+					//if Yes, then traverse further grammar
 					//else Stop traversing RHS more.
 					
 					if( j != RHS.length-1 ) //we do not remove the last epsilon bcoz if ALL symbols in RHS had epsilon, then we add epsilon to result
@@ -221,11 +221,11 @@ class FirstAndFollow
 					}
 					else
 					{
-						//We nee to find the First of whatever is to the right
+						//We need to find the First of whatever is to the right
 						//if suppose A->aBCDE and we were finding FOLLOW(B)
 						//then we need to find FIRST(CDE)
 						//but our function can find FIRST of only 1 character
-						//so we wrote a new function compositeFIRST() which returns a string.
+						//so we wrote a new function compositeFIRST() which returns FIRST of a string.
 						answer += compositeFIRST(RHS[i].substring(j+1));
 						
 						//now, if the FIRST contained epsilon, we add FOLLOW of LHS
